@@ -3,6 +3,12 @@
 
 import os
 import streamlit as st
+
+try:
+    os.system("pip install streamlit_option_menu")
+except:
+    pass
+
 from streamlit_option_menu import option_menu
 
 def Cacher_Hamburger():
