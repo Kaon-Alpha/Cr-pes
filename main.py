@@ -5,11 +5,12 @@ import os
 import streamlit as st
 
 try:
-    os.system("pip install streamlit_option_menu")
+    from streamlit_option_menu import option_menu
 except:
-    pass
+    os.system("pip install streamlit_option_menu")
+    from streamlit_option_menu import option_menu
 
-from streamlit_option_menu import option_menu
+
 
 def Cacher_Hamburger():
     """Fonction permettant de cacher le menu hamburger en haut à droite des apps streamlit."""
